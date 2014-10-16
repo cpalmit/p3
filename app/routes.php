@@ -15,7 +15,16 @@
 //homepage
 Route::get('/', function()
 {
-	return "This will be the homepage";
+
+	$faker = Faker\Factory::create();
+	for ($i=0; $i < 5; $i++) {
+  		echo $faker->name, "\n";
+	}
+
+	$generator = new Lipsum();
+    $paragraphs = $generator->getParagraphs(2);
+    echo implode('<p>', $paragraphs);
+    
 	//return View::make('index');
 });
 

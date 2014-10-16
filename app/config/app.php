@@ -189,7 +189,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Lipsum' 		  => 'Badcow\LoremIpsum\Generator',
-		'Users'			  => 'Faker\Factory'
+		'Faker'			  => 'Faker\Factory'
 
 	),
 
