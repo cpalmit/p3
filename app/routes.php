@@ -20,19 +20,17 @@ Route::get('/', function()
 	for ($i=0; $i < 5; $i++) {
   		echo $faker->name, "\n";
 	}
-
-	$generator = new Lipsum();
-    $paragraphs = $generator->getParagraphs(2);
-    echo implode('<p>', $paragraphs);
     
-	//return View::make('index');
+	return View::make('index');
 });
 
-##############################
-//if I decide not to have both forms on the homepage...
 
 //display lorem ipsum generator
 Route::get('/lipsum', function (){
+	$lorem='';
+	return View::make('lipsum')
+	->with('lorem',$lorem);
+
 	
 });
 
@@ -41,12 +39,17 @@ Route::get('/lipsum', function (){
 Route::get('/users', function (){
 	
 });
-###############################
+
 
 //lorem ipsum form submission
 Route::post('/lipsum', function() {
+	$pcount = Input::get('pcount');
+	$generator = new Lipsum();
+    $paragraphs = $generator->getParagraphs($pcount);
+    $lorem = implode('<p>', $paragraphs);
+    return View::make('lipsum')
+    ->with('lorem',$lorem);
 
-	
 });
 
 

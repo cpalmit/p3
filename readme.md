@@ -15,3 +15,5 @@ Link to [demo]()
 
 ##Outside Code
 Bootstrap: [http://getbootstrap.com/](http://getbootstrap.com/)
+badcow/lorem-ipsum: [https://packagist.org/packages/badcow/lorem-ipsum]
+fzaninotto/faker: [https://packagist.org/packages/fzaninotto/faker]
