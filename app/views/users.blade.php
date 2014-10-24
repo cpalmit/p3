@@ -19,12 +19,12 @@
 	<br>
 		
 	@if(isset($users))
-
 		@foreach ($users as $entry => $user)
 			<p><strong>Name:</strong> {{ $user['name'] }}<br>
 			<strong>Address:</strong> {{ $user['address'] }}<br>
 			<strong>Profile:</strong> {{ $user['profile'] }}</p>
 		@endforeach
-	
+	@elseif(isset($error))
+		{{ $error }}
 	@endif
 @stop

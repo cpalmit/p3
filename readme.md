@@ -9,9 +9,10 @@ generator and a random user generator.
 
 ##Demo
 Link to [demo]()
+*still needs to be created
 
 ##Details
-
+None
 
 ##Outside Code
 Bootstrap: [http://getbootstrap.com/](http://getbootstrap.com/)
