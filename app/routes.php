@@ -65,24 +65,26 @@ Route::get('/test', function (){
 //user form submission
 Route::post('/users', function() {
 	$ucount = Input::get('ucount');
-	if(($ucount>=1)&&($ucount<=25))
-	{
-	
-	$faker = Faker\Factory::create();
-	$name = $faker->name;
-	$address = $faker->address;
-	$profile = $faker->text;
-	
-	
-	
-   
- 	return View::make('users')
-	->with('name',$name)
- 	->with('address',$address)
- 	->with('profile',$profile);
+	if(($ucount>=1)&&($ucount<=25)) {
+		$faker = Faker\Factory::create();
+		for ($i=0; $i < $ucount; $i++) {
+		
+			$users[$i]['name'] = $faker->name;
+			$users[$i]['address'] = $faker->address;
+			$users[$i]['profile'] = $faker->text;
+			//$name = $faker->name;
+			//$address = $faker->address;
+			//$profile = $faker->text;
+		}
+		
+		return View::make('users')
+		//->with('name',$name)
+		//->with('address',$address)
+		//->with('profile',$profile);
+		->with('users',$users);
  	
  	} else {
- 	return View::make('users')
- 	->with('error','Please input a number between one and 25.');
+ 		return View::make('users')
+ 		->with('error','Please input a number between one and 25.');
  	}
 });

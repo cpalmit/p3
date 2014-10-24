@@ -17,12 +17,14 @@
 	{{ Form::close() }}
 	
 	<br>
+		
+	@if(isset($users))
+
+		@foreach ($users as $entry => $user)
+			<p><strong>Name:</strong> {{ $user['name'] }}<br>
+			<strong>Address:</strong> {{ $user['address'] }}<br>
+			<strong>Profile:</strong> {{ $user['profile'] }}</p>
+		@endforeach
 	
-	@if(isset($name))
-		<p><strong>Name:</strong> {{ $name }}<br>
-		<strong>Address:</strong> {{ $address }}<br>
-		<strong>Profile:</strong> {{ $profile }}</p>
-	@else
-		{{ $error }}
 	@endif
 @stop
