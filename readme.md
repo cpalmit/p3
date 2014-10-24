@@ -9,6 +9,7 @@ generator and a random user generator.
 
 ##Demo
 Link to [demo]()
+
 *still needs to be created
 
 ##Details
@@ -16,5 +17,7 @@ None
 
 ##Outside Code
 Bootstrap: [http://getbootstrap.com/](http://getbootstrap.com/)
-badcow/lorem-ipsum: [https://packagist.org/packages/badcow/lorem-ipsum]
-fzaninotto/faker: [https://packagist.org/packages/fzaninotto/faker]
+
+badcow/lorem-ipsum: [https://packagist.org/packages/badcow/lorem-ipsum](https://packagist.org/packages/badcow/lorem-ipsum)
+
+fzaninotto/faker: [https://packagist.org/packages/fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
