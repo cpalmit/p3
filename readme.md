@@ -8,9 +8,7 @@ Developer's Best Friend includes two services every developer needs - a Lorem Ip
 generator and a random user generator.  
 
 ##Demo
-Link to [demo]()
-
-*still needs to be created
+Demo added 10/30: [demo](http://www.screencast.com/t/KruO40gMM)
 
 ##Details
 None
